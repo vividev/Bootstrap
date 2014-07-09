@@ -77,10 +77,10 @@
             <ul class="nav navbar-nav">
               <li class="dropdown">
                 <a data-toggle="dropdown" class="dropdown-toggle" href="news.html">公司动态 <span class="caret"></span></a>
-                <ul role="menu" class="dropdown-menu">
-                  <li><a href="news.html#news">新闻公告</a></li>
-                  <li><a href="news.html#product">产品发布</a></li>
-                  <li><a href="#news.html#league">加盟新闻</a></li>
+                <ul role="menu" class="dropdown-menu" id="newstab">
+                  <li><a href="#news">新闻公告</a></li>
+                  <li><a href="#product">产品发布</a></li>
+                  <li><a href="#league">加盟新闻</a></li>
                 </ul>
               </li>
               <li class="dropdown">
@@ -131,7 +131,7 @@
                 <a class="list-group-item clearfix">
                 <span class="badge">14</span>
                 <img src="img/zcloud.ico" style="width: 64px; height: 64px;" />
-                <span class="item-title">新中国今天成立了</span><br />
+                <span class="item-title">可测试</span><br />
                 <span class="item-content">受 Rdio 的启发，我们提供了这个简单的分页组件，用在应用或搜索结果中超级棒。组件中的每个部分都很大，有点事容易点击、易缩放、点击区域大。</span>
                 <span class="pull-right">
                     <button class="btn btn-xs btn-info">详细</button>
@@ -395,5 +395,22 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.grumble.min.js"></script>
+    <script>
+      $(function () {
+        $('#newstab li a').click(function (e) {
+          e.preventDefault();
+          $('a[href="' + $(this).attr('href') + '"]').tab('show');
+        })
+      });
+      var url = document.location.toString();
+      if (url.match('#')) {
+          $('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
+      } 
+      
+      // Change hash for page-reload
+      $('.nav-tabs a').on('shown', function (e) {
+          window.location.hash = e.target.hash;
+      })
+    </script>
   </body>
 </html>

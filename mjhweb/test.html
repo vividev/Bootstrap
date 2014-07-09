@@ -1,44 +1,7 @@
 <!DOCTYPE html>                                                                                                                                                              
 <html lang="zh-CN">                                                                                                                                                          
   <head>                                                                                                                                                                     
-    <meta charset="utf-8">                                                                                                                                                   
-<!--                                                                                                                                                                         
-                                              :s2XS;   ,XBMMHS   ;S22r.                                                                                                      
-                                    ,;r;:.  ,A#MHHBMBr;MHG9hAMAsA##M##@X                                                                                                     
-                                 .2#@@@#@#&iBH9X2XX3GAA32522X3GHG3X33hA@B                                                                                                    
-                                ;@@H&&&AAHM#A933339hGGh99399hG&&GGG&&AHM@9 .,,....                                                                                           
-                               ;@Bh39&AAAAAA&GGGh39333XXXXXXX22222522223&BSssssssrr,                                                                                         
-                               #H3XG;                                             sr .                                                                                       
-                              ;#3X3&                                             .5:..                                                                                       
-                              rHX2Gr                                            sX;,..                                                                                       
-                           :hH&322Giri52XX3hG&AAAHHHMMMM#@@9.                 :G2:,.                                                                                         
-                          2@@A32223H@@@@@@@@@@@@@@@@@@@@@@r                  9Ar:..                                                                                          
-                         ;@BhX22222X33333XXXX2222222X3AMr                  ;@@,..                                                                                            
-                         A@hX222555SSSiiiiiiisisisii2G5                  .G@@A                                                                                               
-                         2@9X22255SSiiiiisssssssiiS39:                  s@@MGMr                                                                                              
-                         .@AX222555SSiiiiiiiiiiiSXAs                  ,M@@&XXAX                                                                                              
-                          .Gh222555SSSSSiiiiiS52&3.                  2@@AX252G9                                                                                              
-                           XG222255SSSSSiiiSS29A;                  ;@@M325SS5&i                                                                                              
-                          3#3X22555SSSSSSSS5XA5                   G@@G25SSSS2H.                                                                                              
-                          @A3X2225555SSS552&h,                  r@@HX5SSSSS2A;                                                                                               
-                          @H3X225555S5S529Ar                  .M@#92SSSS5299,                                                                                                
-                          S@G3X22555552XAX                   5@@A25SSSSXX5;                                                                                                  
-                           S#BG922222X&&:                  :#@M35SiiiS5                                                                                                      
-                             r29&XXXhHi                   9@@G2SiiiiiXr               ::.                                                                                    
-                                9HhH9.                  r@@B35SiiSSS23           ..:rir;rr:                                                                                  
-                                 9#r                  ,#@@HG9X2222X92    ....,:;rsSs:    2r                                                                                  
-                                ,;                   2@@@MB52AHHHHAS::rrsisiiisr;,     .5;..                                                                                 
-                              3@r                    .              .,,...            rX;...                                                                                 
-                             3@                                                    ,s3S:,.                                                                                   
-                             3r                                                .:sX9i:,.                                                                                     
-                             .23AMBMA5iiiiisssrrrr;;;;;;:::::,,,,,,,,,,::;rsS299Xi;,.                                                                                        
-                          ,@@@@@hA#MXsssiiiiSSS555222222XXXXXXXXXXXXXXXXX22Ssr;,..                                                                                           
-                          2@@@@@;       ...................,,,,,,,,,,,,,....                                                                                                 
-                          ;@###2                                                                                                                                             
-                         @@@                                                                                                                                                 
-                          :                                                                                                                                                  
-                                                                                                                                                                             
--->                                                                                                                                                                          
+    <meta charset="utf-8">                                                                                                                                                                                                                                                                                                                     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">                                                                                                                    
     <meta name="viewport" content="width=device-width, initial-scale=1">                                                                                                     
     <meta name="description" content="demo">                                                                                                                                 
@@ -52,7 +15,6 @@
     <link href="css/my.css" rel="stylesheet" />                                                                                                                              
     <link href="css/mynews.css" rel="stylesheet"  />                                                                                                                         
     <script src="js/jquery-1.11.1.min.js"></script>    
-    <link rel="stylesheet" href="css/style.css" />
     <!--                                                                                                                                                                     
       作者：vividev@163.com                                                                                                                                                     
       时间：2014-07-09                                                                                                                                                          
@@ -78,10 +40,10 @@
             <ul class="nav navbar-nav">                                                                                                                                      
               <li class="dropdown">                                                                                                                                          
                 <a data-toggle="dropdown" class="dropdown-toggle" href="news.html">公司动态 <span class="caret"></span></a>                                                      
-                <ul role="menu" class="dropdown-menu">                                                                                                                       
-                  <li><a href="news.html#news">新闻公告</a></li>                                                                                                                 
-                  <li><a href="news.html#product">产品发布</a></li>                                                                                                              
-                  <li><a href="#news.html#league">加盟新闻</a></li>                                                                                                              
+                <ul role="menu" class="dropdown-menu" id="newstab">                                                                                                                       
+                  <li><a href="#tab1">新闻公告</a></li>                                                                                                                 
+                  <li><a href="#tab2">产品发布</a></li>                                                                                                              
+                  <li><a href="#tab3">加盟新闻</a></li>                                                                                                              
                 </ul>                                                                                                                                                        
               </li>                                                                                                                                                          
               <li class="dropdown">                                                                                                                                          
@@ -120,57 +82,30 @@
     </div>                                                                                                                                                                   
                                                                                                                                                                              
     <div class="container">                                                                                                                                                  
-      <div id="content">                                                                                                                                                     
-        <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">                                                                                                                 
-            <li class="active"><a href="#news" data-toggle="tab">新闻公告</a></li>                                                                                               
-            <li><a href="#product" data-toggle="tab">产品发布</a></li>                                                                                                           
-            <li><a href="#league" data-toggle="tab">加盟信息</a></li>                                                                                                            
-        </ul>                                                                                                                                                                
-                                                                                                                                                                             
-        <div class="tab-content">                                                                                                                        
-            <div class="tab-pane active">                                                                                                                          
-                <div class="">
-                  <div class="">
-                    <div class=" span3 ">
-                      <a href="theme/wordpress/adamant-parallax-one-page-wordpress-theme/1000598">
-                        <div class="browser-bar">
-                          <span class="browser-btn fst"></span>
-                          <span class="browser-btn snd"></span>
-                          <span class="browser-btn trd"></span>
-                        </div>
-                        <img src="img/zcloud.ico" alt="Adamant - Parallax One-Page WordPress Theme">
-                      </a>
-                    </div><!-- theme-img-s -->
-                  <div class="span6">
-                  <h2 class=""><a href="theme/wordpress/adamant-parallax-one-page-wordpress-theme/1000598">Adamant - Parallax One-Page WordPress Theme</a></h2>              
-                  <div class="info r">A <span class="yellow"><strong>Premium WordPress theme</strong></span> suitable for <strong>Blog</strong> and <strong>Portfolio/Personal</strong>. It is responsive and retina. Created on 01 Jul 2014 by <strong><a href="http://themeforest.net/user/apollo13" target="_blank">apollo13</a></strong>. You can purchase it for $35 on <a class="bold" href="http://themeforest.net" target="_blank">Themeforest.net</a></div><!-- info -->
-                    <div class="info-icons">
-                      <div class="feature-icons">                    
-                        <ul class="icons-list">
-                          <li class="responsive on" data-original-title="It is responsive" data-toggle="tooltip"></li>
-                          <li class="retina on" data-original-title="It is retina-ready" data-toggle="tooltip"></li>
-                          <li class="design off" data-original-title="It has not been featured" data-toggle="tooltip"></li>  
-                          <li id="obj1" class="fav off"><a data-original-title="You must be logged in for add it to your favourites" id="fav1" data-toggle="tooltip">Mark as favourite</a></li>                                         
-                        </ul>
-                      </div><!-- feature-icons -->
-                      <div class="state bold">
-                        46 Views <span class="unemph">&amp;</span> <span id="obj_star1">0 Favourites</span>
-                      </div><!-- state -->                     
-                    </div><!-- info-icons -->                                    
-                  </div><!-- main-info-s -->
-                </div><!-- row -->
-              </div>                                                                                                                                                      
-            </div>                                                                                                                                                           
-            <div class="tab-pane" id="product">                                                                                                                              
-                <h1>product</h1>                                                                                                                                             
-                <p>productproductproductproductproduct</p>                                                                                                                   
-            </div>                                                                                                                                                           
-            <div class="tab-pane" id="league">                                                                                                                               
-                <h1>league</h1>                                                                                                                                              
-                <p>leagueleagueleagueleagueleagueleague</p>                                                                                                                  
-            </div>                                                                                                                                                           
-        </div>                                                                                                                                                               
-      </div>                                                                                                                                                                 
+      <div class="tabbable">
+          <ul class="nav nav-tabs">
+              <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a>
+      
+              </li>
+              <li><a href="#tab2" data-toggle="tab">Section 2</a>
+      
+              </li>
+              <li><a href="#tab3" data-toggle="tab">Section 3</a>
+      
+              </li>
+          </ul>
+          <div class="tab-content">
+              <div class="tab-pane active" id="tab1">
+                  <p><a href="#tab2" data-toggle="tab">link</a>.</p>
+              </div>
+              <div class="tab-pane" id="tab2">
+                  <p>I'm in Section 2.</p>
+              </div>
+              <div class="tab-pane" id="tab3">
+                  <p>Howdy, I'm in Section 3</p>
+              </div>
+          </div>
+      </div>                                                                                                                                                                                                                                                                                                                                
     </div>                                                                                                                                                                   
     <footer class="navbar-fixed-bottom">                                                                                                                                     
       <div class="footer-bottom">                                                                                                                                            
@@ -186,7 +121,24 @@
     ================================================== -->                                                                                                                   
     <!-- Placed at the end of the document so the pages load faster -->                                                                                                      
     <script src="js/bootstrap.min.js"></script>                                                                                                                              
-    <script src="js/jquery.grumble.min.js"></script>                                                                                                                         
+    <script src="js/jquery.grumble.min.js"></script>     
+    <script>
+      $(function () {
+        $('#newstab li a').click(function (e) {
+          e.preventDefault();
+          $('a[href="' + $(this).attr('href') + '"]').tab('show');
+        })
+      });
+      var url = document.location.toString();
+      if (url.match('#')) {
+          $('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
+      } 
+      
+      // Change hash for page-reload
+      $('.nav-tabs a').on('shown', function (e) {
+          window.location.hash = e.target.hash;
+      })
+    </script>
   </body>                                                                                                                                                                    
 </html>                                                                                                                                                                      
                                                                                                                                                                              
