@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+<!--
+                                              :s2XS;   ,XBMMHS   ;S22r.                                     
+                                    ,;r;:.  ,A#MHHBMBr;MHG9hAMAsA##M##@X                                    
+                                 .2#@@@#@#&iBH9X2XX3GAA32522X3GHG3X33hA@B                                   
+                                ;@@H&&&AAHM#A933339hGGh99399hG&&GGG&&AHM@9 .,,....                          
+                               ;@Bh39&AAAAAA&GGGh39333XXXXXXX22222522223&BSssssssrr,                        
+                               #H3XG;                                             sr .                      
+                              ;#3X3&                                             .5:..                      
+                              rHX2Gr                                            sX;,..                      
+                           :hH&322Giri52XX3hG&AAAHHHMMMM#@@9.                 :G2:,.                        
+                          2@@A32223H@@@@@@@@@@@@@@@@@@@@@@r                  9Ar:..                         
+                         ;@BhX22222X33333XXXX2222222X3AMr                  ;@@,..                           
+                         A@hX222555SSSiiiiiiisisisii2G5                  .G@@A                              
+                         2@9X22255SSiiiiisssssssiiS39:                  s@@MGMr                             
+                         .@AX222555SSiiiiiiiiiiiSXAs                  ,M@@&XXAX                             
+                          .Gh222555SSSSSiiiiiS52&3.                  2@@AX252G9                             
+                           XG222255SSSSSiiiSS29A;                  ;@@M325SS5&i                             
+                          3#3X22555SSSSSSSS5XA5                   G@@G25SSSS2H.                             
+                          @A3X2225555SSS552&h,                  r@@HX5SSSSS2A;                              
+                          @H3X225555S5S529Ar                  .M@#92SSSS5299,                               
+                          S@G3X22555552XAX                   5@@A25SSSSXX5;                                 
+                           S#BG922222X&&:                  :#@M35SiiiS5                                     
+                             r29&XXXhHi                   9@@G2SiiiiiXr               ::.                   
+                                9HhH9.                  r@@B35SiiSSS23           ..:rir;rr:                 
+                                 9#r                  ,#@@HG9X2222X92    ....,:;rsSs:    2r                 
+                                ,;                   2@@@MB52AHHHHAS::rrsisiiisr;,     .5;..                
+                              3@r                    .              .,,...            rX;...                
+                             3@                                                    ,s3S:,.                  
+                             3r                                                .:sX9i:,.                      
+                             .23AMBMA5iiiiisssrrrr;;;;;;:::::,,,,,,,,,,::;rsS299Xi;,.                       
+                          ,@@@@@hA#MXsssiiiiSSS555222222XXXXXXXXXXXXXXXXX22Ssr;,..                          
+                          2@@@@@;       ...................,,,,,,,,,,,,,....                                
+                          ;@###2                                                                            
+                         @@@                                                                                
+                          :     
+                          
+-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="demo">
+    <meta name="author" content="vivi">
+    <link rel="icon" href="img/zcloud.ico">
+
+    <title>Jumbotron Template for Bootstrap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/jumbotron.css" rel="stylesheet" />
+    <link href="css/grumble.min.css" rel="stylesheet" />
+    <link href="css/my.css" rel="stylesheet" />
+    <link href="css/mynews.css" rel="stylesheet"  />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!--
+      作者：vividev@163.com
+      时间：2014-07-09
+      描述：mjh带列表分页详细页
+    -->
+    <!--<script src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>-->
+  </head>
+
+  <body data-spy="scroll" data-target="#myScrollspy">
+    <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">满江红-智云</a>
+        </div>        
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" href="news.html">公司动态 <span class="caret"></span></a>
+                <ul role="menu" class="dropdown-menu">
+                  <li><a href="news.html#news">新闻公告</a></li>
+                  <li><a href="news.html#product">产品发布</a></li>
+                  <li><a href="#news.html#league">加盟新闻</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" href="product.html">产品服务 <span class="caret"></span></a>
+                <ul role="menu" class="dropdown-menu">
+                  <li><a href="product.html#app">手机App</a></li>
+                  <li><a href="product.html#weixin">微信平台</a></li>
+                  <li><a href="product.html#web">web网站</a></li>
+                </ul>
+              </li>
+              <li><a href="partner.html">合作伙伴</a></li>
+              <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#about.html">关于 <span class="caret"></span></a>
+                <ul role="menu" class="dropdown-menu">
+                  <li><a href="about.html#introduce">公司简介</a></li>
+                  <li><a href="about.html#history">发展历程</a></li >
+                  <li><a href="about.html#culture">企业文化</a></li>
+                  <li><a href="about.html#structure">公司架构</a></li>
+                  <li><a href="about.html#license">资质证书</a></li>
+                  <li><a href="about.html#hire">诚聘英才</a></li>
+                  <li><a href="about.html#contact">联系我们</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-right" role="form">
+              <div class="form-group">
+                <input type="text" placeholder="邮箱" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="password" placeholder="密码" class="form-control">
+              </div>
+              <button type="submit" class="btn btn-success">登陆</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+    
+    <div class="container">
+      <div id="content">
+        <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+            <li class="active"><a href="#news" data-toggle="tab">新闻公告</a></li>
+            <li><a href="#product" data-toggle="tab">产品发布</a></li>
+            <li><a href="#league" data-toggle="tab">加盟信息</a></li>
+        </ul>
+        
+        <div id="my-tab-content" class="tab-content">
+            <div class="tab-pane active" id="news">
+                <a class="list-group-item clearfix">
+                <span class="badge">14</span>
+                <img src="img/zcloud.ico" style="width: 64px; height: 64px;" />
+                <span class="item-title">新中国今天成立了</span><br />
+                <span class="item-content">受 Rdio 的启发，我们提供了这个简单的分页组件，用在应用或搜索结果中超级棒。组件中的每个部分都很大，有点事容易点击、易缩放、点击区域大。</span>
+                <span class="pull-right">
+                    <button class="btn btn-xs btn-info">详细</button>
+                    <!--<button class="btn btn-xs btn-warning">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>-->
+                </span>                     
+              </a>
+              <a class="list-group-item clearfix">
+                <span class="badge">14</span>
+                <img src="img/zcloud.ico" style="width: 64px; height: 64px;" />
+                <span class="item-title">新中国今天成立了</span><br />
+                <span class="item-content">受 Rdio 的启发，我们提供了这个简单的分页组件，用在应用或搜索结果中超级棒。组件中的每个部分都很大，有点事容易点击、易缩放、点击区域大。</span>
+                <span class="pull-right">
+                    <button class="btn btn-xs btn-info">详细</button>
+                    <!--<button class="btn btn-xs btn-warning">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>-->
+                </span>                     
+              </a>
+              <a class="list-group-item clearfix">
+                <span class="badge">14</span>
+                <img src="img/zcloud.ico" style="width: 64px; height: 64px;" />
+                <span class="item-title">新中国今天成立了</span><br />
+                <span class="item-content">受 Rdio 的启发，我们提供了这个简单的分页组件，用在应用或搜索结果中超级棒。组件中的每个部分都很大，有点事容易点击、易缩放、点击区域大。</span>
+                <span class="pull-right">
+                    <button class="btn btn-xs btn-info">详细</button>
+                    <!--<button class="btn btn-xs btn-warning">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>-->
+                </span>                     
+              </a>
+              <a class="list-group-item clearfix">
+                <span class="badge">14</span>
+                <img src="img/zcloud.ico" style="width: 64px; height: 64px;" />
+                <span class="item-title">新中国今天成立了</span><br />
+                <span class="item-content">受 Rdio 的启发，我们提供了这个简单的分页组件，用在应用或搜索结果中超级棒。组件中的每个部分都很大，有点事容易点击、易缩放、点击区域大。</span>
+                <span class="pull-right">
+                    <button class="btn btn-xs btn-info">详细</button>
+                    <!--<button class="btn btn-xs btn-warning">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>-->
+                </span>                     
+              </a>
+              <a class="list-group-item clearfix">
+                <span class="badge">14</span>
+                <img src="img/zcloud.ico" style="width: 64px; height: 64px;" />
+                <span class="item-title">新中国今天成立了</span><br />
+                <span class="item-content">受 Rdio 的启发，我们提供了这个简单的分页组件，用在应用或搜索结果中超级棒。组件中的每个部分都很大，有点事容易点击、易缩放、点击区域大。</span>
+                <span class="pull-right">
+                    <button class="btn btn-xs btn-info">详细</button>
+                    <!--<button class="btn btn-xs btn-warning">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>-->
+                </span>                     
+              </a>
+              <a class="list-group-item clearfix">
+                <span class="badge">14</span>
+                <img src="img/zcloud.ico" style="width: 64px; height: 64px;" />
+                <span class="item-title">新中国今天成立了</span><br />
+                <span class="item-content">受 Rdio 的启发，我们提供了这个简单的分页组件，用在应用或搜索结果中超级棒。组件中的每个部分都很大，有点事容易点击、易缩放、点击区域大。</span>
+                <span class="pull-right">
+                    <button class="btn btn-xs btn-info">详细</button>
+                    <!--<button class="btn btn-xs btn-warning">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>-->
+                </span>                     
+              </a>
+              <ul class="pagination">
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>
+            <div class="tab-pane" id="product">
+              <a class="list-group-item clearfix">
+                <span class="badge">14</span>
+                <img src="img/zcloud.ico" style="width: 64px; height: 64px;" />
+                <span class="item-title">新中国今天成立了</span><br />
+                <span class="item-content">受 Rdio 的启发，我们提供了这个简单的分页组件，用在应用或搜索结果中超级棒。组件中的每个部分都很大，有点事容易点击、易缩放、点击区域大。</span>
+                <span class="pull-right">
+                    <button class="btn btn-xs btn-info">详细</button>
+                    <!--<button class="btn btn-xs btn-warning">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>-->
+                </span>                     
+              </a>
+              <a class="list-group-item clearfix">
+                <span class="badge">14</span>
+                <img src="img/zcloud.ico" style="width: 64px; height: 64px;" />
+                <span class="item-title">新中国今天成立了</span><br />
+                <span class="item-content">受 Rdio 的启发，我们提供了这个简单的分页组件，用在应用或搜索结果中超级棒。组件中的每个部分都很大，有点事容易点击、易缩放、点击区域大。</span>
+                <span class="pull-right">
+                    <button class="btn btn-xs btn-info">详细</button>
+                    <!--<button class="btn btn-xs btn-warning">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>-->
+                </span>                     
+              </a>
+              <a class="list-group-item clearfix">
+                <span class="badge">14</span>
+                <img src="img/zcloud.ico" style="width: 64px; height: 64px;" />
+                <span class="item-title">新中国今天成立了</span><br />
+                <span class="item-content">受 Rdio 的启发，我们提供了这个简单的分页组件，用在应用或搜索结果中超级棒。组件中的每个部分都很大，有点事容易点击、易缩放、点击区域大。</span>
+                <span class="pull-right">
+                    <button class="btn btn-xs btn-info">详细</button>
+                    <!--<button class="btn btn-xs btn-warning">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>-->
+                </span>                     
+              </a>
+              <a class="list-group-item clearfix">
+                <span class="badge">14</span>
+                <img src="img/zcloud.ico" style="width: 64px; height: 64px;" />
+                <span class="item-title">新中国今天成立了</span><br />
+                <span class="item-content">受 Rdio 的启发，我们提供了这个简单的分页组件，用在应用或搜索结果中超级棒。组件中的每个部分都很大，有点事容易点击、易缩放、点击区域大。</span>
+                <span class="pull-right">
+                    <button class="btn btn-xs btn-info">详细</button>
+                    <!--<button class="btn btn-xs btn-warning">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>-->
+                </span>                     
+              </a>
+              <a class="list-group-item clearfix">
+                <span class="badge">14</span>
+                <img src="img/zcloud.ico" style="width: 64px; height: 64px;" />
+                <span class="item-title">新中国今天成立了</span><br />
+                <span class="item-content">受 Rdio 的启发，我们提供了这个简单的分页组件，用在应用或搜索结果中超级棒。组件中的每个部分都很大，有点事容易点击、易缩放、点击区域大。</span>
+                <span class="pull-right">
+                    <button class="btn btn-xs btn-info">详细</button>
+                    <!--<button class="btn btn-xs btn-warning">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>-->
+                </span>                     
+              </a>
+              <a class="list-group-item clearfix">
+                <span class="badge">14</span>
+                <img src="img/zcloud.ico" style="width: 64px; height: 64px;" />
+                <span class="item-title">新中国今天成立了</span><br />
+                <span class="item-content">受 Rdio 的启发，我们提供了这个简单的分页组件，用在应用或搜索结果中超级棒。组件中的每个部分都很大，有点事容易点击、易缩放、点击区域大。</span>
+                <span class="pull-right">
+                    <button class="btn btn-xs btn-info">详细</button>
+                    <!--<button class="btn btn-xs btn-warning">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>-->
+                </span>                     
+              </a>
+              <ul class="pagination">
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>
+            <div class="tab-pane" id="league">
+              <a class="list-group-item clearfix">
+                <span class="badge">14</span>
+                <img src="img/zcloud.ico" style="width: 64px; height: 64px;" />
+                <span class="item-title">新中国今天成立了</span><br />
+                <span class="item-content">受 Rdio 的启发，我们提供了这个简单的分页组件，用在应用或搜索结果中超级棒。组件中的每个部分都很大，有点事容易点击、易缩放、点击区域大。</span>
+                <span class="pull-right">
+                    <button class="btn btn-xs btn-info">详细</button>
+                    <!--<button class="btn btn-xs btn-warning">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>-->
+                </span>                     
+              </a>
+              <a class="list-group-item clearfix">
+                <span class="badge">14</span>
+                <img src="img/zcloud.ico" style="width: 64px; height: 64px;" />
+                <span class="item-title">新中国今天成立了</span><br />
+                <span class="item-content">受 Rdio 的启发，我们提供了这个简单的分页组件，用在应用或搜索结果中超级棒。组件中的每个部分都很大，有点事容易点击、易缩放、点击区域大。</span>
+                <span class="pull-right">
+                    <button class="btn btn-xs btn-info">详细</button>
+                    <!--<button class="btn btn-xs btn-warning">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>-->
+                </span>                     
+              </a>
+              <a class="list-group-item clearfix">
+                <span class="badge">14</span>
+                <img src="img/zcloud.ico" style="width: 64px; height: 64px;" />
+                <span class="item-title">新中国今天成立了</span><br />
+                <span class="item-content">受 Rdio 的启发，我们提供了这个简单的分页组件，用在应用或搜索结果中超级棒。组件中的每个部分都很大，有点事容易点击、易缩放、点击区域大。</span>
+                <span class="pull-right">
+                    <button class="btn btn-xs btn-info">详细</button>
+                    <!--<button class="btn btn-xs btn-warning">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>-->
+                </span>                     
+              </a>
+              <a class="list-group-item clearfix">
+                <span class="badge">14</span>
+                <img src="img/zcloud.ico" style="width: 64px; height: 64px;" />
+                <span class="item-title">新中国今天成立了</span><br />
+                <span class="item-content">受 Rdio 的启发，我们提供了这个简单的分页组件，用在应用或搜索结果中超级棒。组件中的每个部分都很大，有点事容易点击、易缩放、点击区域大。</span>
+                <span class="pull-right">
+                    <button class="btn btn-xs btn-info">详细</button>
+                    <!--<button class="btn btn-xs btn-warning">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>-->
+                </span>                     
+              </a>
+              <a class="list-group-item clearfix">
+                <span class="badge">14</span>
+                <img src="img/zcloud.ico" style="width: 64px; height: 64px;" />
+                <span class="item-title">新中国今天成立了</span><br />
+                <span class="item-content">受 Rdio 的启发，我们提供了这个简单的分页组件，用在应用或搜索结果中超级棒。组件中的每个部分都很大，有点事容易点击、易缩放、点击区域大。</span>
+                <span class="pull-right">
+                    <button class="btn btn-xs btn-info">详细</button>
+                    <!--<button class="btn btn-xs btn-warning">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>-->
+                </span>                     
+              </a>
+              <a class="list-group-item clearfix">
+                <span class="badge">14</span>
+                <img src="img/zcloud.ico" style="width: 64px; height: 64px;" />
+                <span class="item-title">新中国今天成立了</span><br />
+                <span class="item-content">受 Rdio 的启发，我们提供了这个简单的分页组件，用在应用或搜索结果中超级棒。组件中的每个部分都很大，有点事容易点击、易缩放、点击区域大。</span>
+                <span class="pull-right">
+                    <button class="btn btn-xs btn-info">详细</button>
+                    <!--<button class="btn btn-xs btn-warning">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>-->
+                </span>                     
+              </a>
+              <ul class="pagination">
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+    <footer class="navbar-fixed-bottom">
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="copyright">
+            Copyright &copy; 2014&nbsp;满江红文化传媒有限公司 
+          </div>
+        </div>
+      </div>
+    </footer> 
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.grumble.min.js"></script>
+  </body>
+</html>
