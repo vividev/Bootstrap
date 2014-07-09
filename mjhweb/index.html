@@ -52,8 +52,11 @@
     <link href="css/my.css" rel="stylesheet" />
     
     <script src="js/jquery-1.11.1.min.js"></script>
-    
-    <!--<script src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>-->
+    <!--
+    	作者：vividev@163.com
+    	时间：2014-07-09
+    	描述：mjh首页
+    -->
   </head>
   <body>
     <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
@@ -65,7 +68,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">满江红-智云</a>
+          <a class="navbar-brand" href="index.html">满江红-智云</a>
         </div>        
 
         <div class="navbar-collapse collapse">
@@ -88,15 +91,15 @@
               </li>
               <li><a href="#">合作伙伴</a></li>
               <li class="dropdown">
-                <a data-toggle="dropdown" class="dropdown-toggle" href="#">关于 <span class="caret"></span></a>
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#about.html">关于 <span class="caret"></span></a>
                 <ul role="menu" class="dropdown-menu">
-                  <li><a href="#">公司简介</a></li>
-                  <li><a href="#">发展历程</a></li>
-                  <li><a href="#">企业文化</a></li>
-                  <li><a href="#">公司架构</a></li>
-                  <li><a href="#">资质证书</a></li>
-                  <li><a href="#">诚聘英才</a></li>
-                  <li><a href="#">联系我们</a></li>
+                  <li><a href="about.html#introduce">公司简介</a></li>
+                  <li><a href="about.html#history">发展历程</a></li >
+                  <li><a href="about.html#culture">企业文化</a></li>
+                  <li><a href="about.html#structure">公司架构</a></li>
+                  <li><a href="about.html#license">资质证书</a></li>
+                  <li><a href="about.html#hire">诚聘英才</a></li>
+                  <li><a href="about.html#contact">联系我们</a></li>
                 </ul>
               </li>
             </ul>
@@ -221,12 +224,11 @@
 
       <!-- /END THE FEATURETTES -->
     </div><!-- /.container -->
-    <div class="footer-content">
+    <!--<div class="footer-content">
         <div class="container">
             <div class="row">
               <div class="col-md-6 map">
                 <h3>公司地址</h3>
-                  <!--<div style="width:500px;height:200px;border: 6px solid #006600 ;" id="dituContent"></div>-->
                   <div style="width:510px;height:212px;border: 6px solid #006600 ;">
                     <img src="img/map.jpg" />
                   </div>
@@ -249,8 +251,8 @@
 
             </div>
         </div>
-    </div>
-    <footer>
+    </div>-->
+    <footer class="navbar-fixed-bottom">
       <div class="footer-bottom">
         <div class="container">
           <div class="copyright">
@@ -259,13 +261,11 @@
         </div>
       </div>
     </footer>
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.grumble.min.js"></script>
-    <!--<script src="js/baidumap.js"></script>-->
     <script>
     function dropmenu (){
       $('.dropdown-toggle').dropdown('toggle');     
@@ -279,8 +279,8 @@
         isShowBubbleM3 = false;
     $('#m1').mouseenter(function(e){
       e.preventDefault();
-      var x = 0;
-      var y = 360;
+      var x = 90;
+      var y = 270;
       var rand = parseInt(Math.random() * (x - y + 1) + y);
       if(!isShowBubbleM1){
         $('#m1').grumble({
@@ -300,8 +300,8 @@
     });
     $('#m2').mouseenter(function(e){
       e.preventDefault();
-      var x = 0;
-      var y = 360;
+      var x = 90;
+      var y = 270;
       var rand = parseInt(Math.random() * (x - y + 1) + y);
       if(!isShowBubbleM2){
         $('#m2').grumble({
@@ -321,8 +321,8 @@
     });
     $('#m3').mouseenter(function(e){
       e.preventDefault();
-      var x = 0;
-      var y = 360;
+      var x = 90;
+      var y = 270;
       var rand = parseInt(Math.random() * (x - y + 1) + y);
       if(!isShowBubbleM3){
         $('#m3').grumble({
